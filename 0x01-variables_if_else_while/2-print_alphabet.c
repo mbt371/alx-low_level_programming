@@ -1,7 +1,15 @@
 #include <stdio.h>
-
+/**
+*main - print the alphabet
+*
+* Return: Always (Success)
+*/
 int main(void)
 {
-putchar ('\n');
+	char c;
+
+	for (c = 'a'; c <= 'z'; c++)
+		putchar(c);
+	putchar('\n');
+	return 0;
 }
-return 0;
