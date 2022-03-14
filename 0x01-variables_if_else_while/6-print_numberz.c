@@ -1,16 +1,17 @@
 #include <stdio.h>
 /**
-* main - prints single digit numbers
-* Return: Always (Success)
+* main - entry point
 *
+* Return: Always 0
 */
-int main (void)
-{
-	int i;
+int main(void)
 
-	for (i=0; i<10; i++)
-	{
-		printf("%d",i);
-	}
-	return (0);
+{
+int i;
+for (i = 48; i < 57; i++)
+{putchar (i);
+}
+
+putchar ('\n');
+return (0);
 }
