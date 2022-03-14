@@ -6,7 +6,7 @@
 * main - Entry point
 *
 * Return: Always 0 (Sucess)
-* betty style doc for function main goes there 
+* betty style doc for function main goes there
 */
 
 int main(void)/* maiin assigns numbers to variable n */
