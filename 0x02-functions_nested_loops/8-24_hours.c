@@ -7,6 +7,7 @@
 * Return: 24 hour clock line by line
 */
 void jack_bauer(void);
+
 {
 int h, m;
 
