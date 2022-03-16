@@ -2,9 +2,9 @@
 int main(void)
 {
 int counter = 2;
-long int a = 1;
-long int b = a + 1;
-long int c = a + b;
+int a = 1;
+int b = a + 1;
+int c = a + b;
 
 printf("%1d, %1d, ", a, b);
 while (counter < 50)
