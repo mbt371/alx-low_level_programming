@@ -1,5 +1,5 @@
 #include <stdio.h>
-#iinclude <stdlib.h>
+#include <stdlib.h>
 int main(void)
 {
 double a = 0;
