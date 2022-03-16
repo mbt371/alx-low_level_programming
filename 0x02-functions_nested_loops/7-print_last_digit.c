@@ -2,26 +2,28 @@
 
 /**
 * print_last_digit - a function that prints the last digit
-* @n: n is an integer
 *
-* Return: integer
+* @n: The int to print
+* Return: Always 0.
 */
 
 int print_last_digit(int n)
-{
-int lastDig;
 
-
-if (n >=  0)
 {
-latDigit = n % 10;
+int last_gigit;
+
+if (n < 0)
+{
+last_digit = (-1 * (n % 10));
+_putchar (last_digit + '0');
+return (last_digit);
 }
+
 else
 {
-lastDigit = (n % 10) * -1;
-}
-_putchar('0' + lastDig);
-return (lastDig);
-reture (lastDig)
+last_digit = (n %10);
+_putchar (last_digit + '0');
+return (last_digit);
 }
 
+}
