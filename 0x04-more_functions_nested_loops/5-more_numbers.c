@@ -2,21 +2,41 @@
 
 /**
  * more_numbers - prints 10 times the numbers, from 0 to 14
- * followed by a new line
  *
+ * Return: Always 0.
  */
+
 void more_numbers(void)
 {
-	int i, j;
+int i;
+int first_number;
+int second_number;
+int result;
+i = 0;
+result = 0;
+while (i < 10)
+{
+while (result <= 14)
+{
+if (result < 10)
+{
+second_number = result;
+}
 
-	for (i = 0; i < 10; i++)
-	{
-		for (j = 0; j < 15; j++)
-		{
-			if (j >= 10)
-				_putchar(j / 10 + '0');
-			_putchar(j % 10 + '0');
-		}
-		_putchar('\n');
-	}
+else
+{
+first_number = result / 10;
+second_number = result % 10;
+_putchar (first_number + '0');
+}
+
+_putchar (second_number + '0');
+
+result++;
+}
+i++;
+result = 0;
+_putchar ('\n');
+}
+
 }
