@@ -1,21 +1,16 @@
 #include "main.h"
-
 /**
- * print_numbers - priint the numbers from 0 t0 9
- * Description: you can only use _putchar twice
+ *print_numbers - prints 0 - 9.
  *
- * Return: always 0
+ *Return: void.
  */
-
 void print_numbers(void)
 {
-int i;
+	int i;
 
-while (i < 10)
-{
-_putchar (i + '0');
-i++;
-}
-
-_putchar ('\n');
+	for (i = 0; i < 10; i++)
+	{
+		_putchar('0' + i);
+	}
+	_putchar('\n');
 }
