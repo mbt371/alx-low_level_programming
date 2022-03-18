@@ -1,22 +1,23 @@
 #include <stdio.h>
-#include <stdlib.h>
+/**
+ * main - main block
+ * Description: computes and prints even  number < 4,000,000
+ * 5 below 1024 (excluded), followed by a new line
+ * Return: 0
+ */
 int main(void)
 {
-double a = 0;
-double b = 1;
-double sum = 0;
-double f;
-int i, pair;
+	int a = 0, b = 1, next = 0;
+	int sum = 0;
 
-for (i = 0; i < 32; i++)
-{
-f = a + b;
-pair = f;
-if (pair % 2 == 0)
-sum = sum + f;
-a = b;
-b = f;
-}
-printf("%.f\n", sum);
-return (0);
+	while (next < 4000000)
+	{
+		next = a + b;
+		a = b;
+		b = next;
+		if (next % 2 == 0)
+			sum += next;
+	}
+	printf("%i\n", sum);
+	return (0);
 }
