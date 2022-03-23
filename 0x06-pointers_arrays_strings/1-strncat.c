@@ -1,25 +1,25 @@
 #include "main.h"
 
 /**
- * _strncat - concatenates two strings
- * @dest:char dest
- * @src: char src
- * @n:length int
- * Return:char
- */
+*_strncat - function that concatenates two strings.
+*@src: tyui
+*@dest: tyuip
+*@n: rtfg
+* Return: dest
+*/
 char *_strncat(char *dest, char *src, int n)
 {
-	int i, j;
+	int x = 0, l = 0;
 
-	for (i = 0; dest[i] != '\0'; i++)
+	while (dest[x++])
 	{
-		continue;
+		l++;
 	}
-	for (j = 0; src[j] != '\0' && j < n; j++)
+	for (x = 0; x < n && src[x] != '\0'; l++, x++)
 	{
-		dest[i + j] = src[j];
+		dest[l] = src[x];
 	}
-	dest[i + j] = '\0';
+
 	return (dest);
 }
-[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[B[B[B[B[C[C[C[C[C[C[C[C[C[C[3~[3~[3~[C[C[C[C[C[C[C[C[C[C[Cmain.h"[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[
+
