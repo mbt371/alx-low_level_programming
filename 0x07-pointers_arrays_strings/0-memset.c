@@ -1,7 +1,7 @@
 /*
 * File: 0-memset.c
-* Author: Rodrigo Zárate Algecira
-* Date: Monday 06 july 2021
+* Author: mbt371
+* Date: Monday 28 march 2022
 */
 
 #include "main.h"
