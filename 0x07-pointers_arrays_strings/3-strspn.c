@@ -1,10 +1,10 @@
 /*
 * File: 3-strspn.c
-* Author: Rodrigo Zárate Algecira
-* Date: Monday 06 july 2021
+* Author: mbt371
+* Date: Monday 28 march 2022
 */
 
-#include "holberton.h"
+#include "main.h"
 
 /**
 * _strspn - Find characters in beggining of string.
@@ -39,4 +39,3 @@ x = 0;
 	}
 return (x);
 }
-[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[A[D[D[D[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cmain.h"[A[A[A[C[C[C[C[C[C[C[C[C[2[D[D[D[D[D[March [D[D[D[D[D[D28[A[C[C[C[C[C[C[C[Cmbt371[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B[B
