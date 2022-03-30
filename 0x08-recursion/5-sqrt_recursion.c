@@ -4,7 +4,7 @@
 * Date: 30 march 2022
 */
 
-#include "maiin.h"
+#include "main.h"
 
 /**
 * is_sqrt - square of a number
