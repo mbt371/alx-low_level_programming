@@ -15,20 +15,20 @@
 
 int is_prime(int a, int b)
 {
-        if (a <= 1 || (a != b && a % b == 0))
-        {
-        /* not prime if minor than 1 or 1 */
-        /* not prime if even */
-                return (0);
-        }
-        else if (a == b)
-        {
-        /* if 2 its prime */
-        /* special case */
-                return (1);
-        }
-        /* walk until find number given */
-        return (is_prime(a, b + 1));
+	if (a <= 1 || (a != b && a % b == 0))
+	{
+	/* not prime if minor than 1 or 1 */
+	/* not prime if even */
+		return (0);
+	}
+	else if (a == b)
+	{
+	/* if 2 its prime */
+	/* special case */
+		return (1);
+	}
+	/* walk until find number given */
+	return (is_prime(a, b + 1));
 }
 
 
@@ -40,6 +40,6 @@ int is_prime(int a, int b)
 */
 int is_prime_number(int n)
 {
-        return (is_prime(n, 2));
+	return (is_prime(n, 2));
 }
 
