@@ -1,44 +1,55 @@
 #include "search_algos.h"
-
 /**
- * interpolation_search - Function that searches for a value in a sorted array
- *                        of integers using the Interpolation search algorithm
- *
- * @array:  is a pointer to the first element of the array to search in
- * @size:   is the number of elements in array
- * @value:  is the value to search for
- *
- * Return:  Must return the index where value is located
- *          If value is not present in array or if array is NULL,
- *          your function must return -1
- */
-
+* interpolation_search - searches for a value in a sorted array of integers
+* using the Interpolation search algorithm
+*
+* @array: Pointer to the beginning of an array
+* @size: The size of the array
+* @value: value to search for
+*
+* Return: Nothing
+*/
 int interpolation_search(int *array, size_t size, int value)
 {
-	size_t start = 0, end = size - 1, pos = 0;
+	if (!array)
+		return (-1);
+	return (interpolation_recur(array, 0, size - 1, value));
+}
+/**
+* interpolation_recur - searches for a value in a sorted array recursively
+* using the Interpolation search algorithm
+*
+* @array: Pointer to the beginning of an array
+* @start: starting index
+* @end: ending index
+* @value: value to search for
+*
+* Return: Nothing
+*/
+int interpolation_recur(int *array, size_t start, size_t end, int value)
+{
+	size_t position;
 
-	if (array == NULL)
+	position = start + (((double)(end - start) /
+			     (array[end] - array[start]))
+			  * (value - array[start]));
+
+	if (position > end)
+	{
+		printf("Value checked array[%lu] is out of range\n", position);
+		return (-1);
+	}
+
+	printf("Value checked array[%lu] = [%i]\n", position, array[position]);
+
+	if (array[position] == value)
+		return (position);
+
+	if (start == end)
 		return (-1);
 
-	while (((start <= (size - 1)) && (end <= (size - 1))))
-	{
-		pos = (start + ((value - array[start]) * (end - start))
-			/ (array[end] - array[start]));
-
-		if (pos > (size - 1))
-		{
-			printf("Value checked array[%zu] is out of range\n", pos);
-			return (-1);
-		}
-		printf("Value checked array[%zu] = [%d]\n", pos, array[pos]);
-
-		if (array[pos] == value)
-			return (pos);
-		else if (value > array[pos])
-			start = pos + 1;
-		else
-			end = pos - 1;
-	}
-	printf("Value checked array[%zu] is out of range\n", pos);
-	return (-1);
+	if (array[position] < value)
+		return (interpolation_recur(array, position + 1, end, value));
+	else
+		return (interpolation_recur(array, start, position - 1, value));
 }
